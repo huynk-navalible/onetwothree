@@ -1,0 +1,9 @@
+name=st
+version=0.9.3
+release=1
+source=(https://dl.suckless.org/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	make DESTDIR=$PKG clean install
+}

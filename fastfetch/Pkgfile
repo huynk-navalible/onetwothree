@@ -1,0 +1,14 @@
+name=fastfetch
+version=2.58.0
+release=2.58.0
+source=(https://github.com/$name-cli/$name/archive/refs/tags/$version.tar.gz)
+
+build() {
+	cd $name-$version
+	mkdir -p build 
+	cd build 
+	cmake ..
+	cmake --build . --target fastfetch
+	mkdir -p $PKG/usr/bin
+	cp fastfetch $PKG/usr/bin 
+}

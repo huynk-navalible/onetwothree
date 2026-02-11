@@ -1,0 +1,8 @@
+drwxr-xr-x	huy/huy	usr/
+drwxr-xr-x	huy/huy	usr/local/
+drwxr-xr-x	huy/huy	usr/local/bin/
+-rwxr-xr-x	huy/huy	usr/local/bin/st
+drwxr-xr-x	huy/huy	usr/local/share/
+drwxr-xr-x	huy/huy	usr/local/share/man/
+drwxr-xr-x	huy/huy	usr/local/share/man/man1/
+-rw-r--r--	huy/huy	usr/local/share/man/man1/st.1.gz

@@ -1,0 +1,11 @@
+name=alacritty
+version=0.16.1
+release=1
+source=(https://github.com/$name/$name/archive/refs/tags/v$version.tar.gz)
+
+build() {
+	cd $name-$version
+	cargo build --release
+	mkdir -p $PKG/usr/bin
+	cp target/release/alacritty $PKG/usr/bin
+}
