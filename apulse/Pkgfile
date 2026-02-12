@@ -1,0 +1,12 @@
+name=apulse
+version=0.1.14
+release=1
+source=(https://github.com/i-rinat/$name/archive/refs/tags/v$version.tar.gz)
+
+build() {
+	cd $name-$version
+	mkdir build && cd build
+	cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release ..
+	make 
+	make DESTDIR=$PKG install
+}
